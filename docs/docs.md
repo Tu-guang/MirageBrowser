@@ -112,7 +112,7 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
     "browserName": "TestBrowser1",
     "fingerprint": {
       "os": "Windows",
-      "platformVersion": "13.0.0",
+      "platformVersion": "15.0.0",
       "kernel": "130",
       "userAgent": "Mozilla/5.0",
       "webrtc": "relay",
@@ -359,6 +359,7 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         "browserName": "11",
         "fingerprint": {
           "os": "Windows",
+          "platformVersion": "15.0.0",
           "cpu": 3,
           "ram": 4,
           "fonts": [],
@@ -401,17 +402,15 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         "browserName": "aaaas",
         "fingerprint": {
           "os": "win",
-          "cpu": {
-            "cores": 4,
-            "architecture": "x86_64"
-          },
+          "platformVersion": "15.0.0",
+          "cpu": 4,
           "ram": 4,
           "fonts": [],
           "webgl": {
             "glRender": "Intel(R) HD Graphics Family Direct3D11 vs_4_1 ps_4_1, D3D11-10.18.13.5598",
             "glVendor": "Intel"
           },
-          "canvas": 0,
+          "canvas": true,
           "kernel": "130",
           "webgpu": {
             "gpuArch": "gen-7"
@@ -423,9 +422,9 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
           "disableTLS": [],
           "resolution": "1000x1000",
           "uiLanguage": "",
-          "clientRects": 0,
-          "audioContext": 0,
-          "speechVoices": [],
+          "clientRects": true,
+          "audioContext": true,
+          "speechVoices": true,
           "startupParams": "",
           "disableSandbox": "enable",
           "portScanProtection": "",
@@ -447,18 +446,16 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
       {
         "browserName": "kkkk",
         "fingerprint": {
-          "os": "win",
-          "cpu": {
-            "cores": 4,
-            "architecture": "x86_64"
-          },
+          "os": "Windows",
+          "platformVersion": "15.0.0",
+          "cpu": 4,
           "ram": 4,
           "fonts": [],
           "webgl": {
             "glRender": "Intel(R) HD Graphics Family Direct3D11 vs_4_1 ps_4_1, D3D11-10.18.13.5598",
             "glVendor": "Intel"
           },
-          "canvas": 0,
+          "canvas": true,
           "kernel": "130",
           "webgpu": {
             "gpuArch": "gen-7",
@@ -471,9 +468,9 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
           "disableTLS": [],
           "resolution": "1000x1000",
           "uiLanguage": "",
-          "clientRects": 0,
-          "audioContext": 0,
-          "speechVoices": [],
+          "clientRects": true,
+          "audioContext": true,
+          "speechVoices": true,
           "startupParams": "",
           "disableSandbox": "enable",
           "portScanProtection": "",
@@ -495,11 +492,9 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
       {
         "browserName": "aaa",
         "fingerprint": {
-          "os": "win",
-          "cpu": {
-            "cores": 4,
-            "architecture": "x86_64"
-          },
+          "os": "Windows",
+          "platformVersion": "15.0.0",
+          "cpu": 4,
           "ram": 4,
           "fonts": [],
           "webgl": {
@@ -544,10 +539,8 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         "browserName": "eaddsads",
         "fingerprint": {
           "os": "Windows",
-          "cpu": {
-            "cores": 4,
-            "architecture": "x86_64"
-          },
+          "platformVersion": "15.0.0",
+          "cpu": 4,
           "ram": 4,
           "fonts": [],
           "webgl": {
