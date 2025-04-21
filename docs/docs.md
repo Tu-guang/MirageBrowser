@@ -244,7 +244,7 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 {
   "success": true,
   "data": {
-    "id": 900,
+    "envId": 900,
     "openStatus": 0,
     "pid": 0,
     "port": 0,
@@ -614,7 +614,7 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
   "success": true,
   "data": [
     {
-      "id": 900,
+      "envId": 900,
       "browserName": "11",
       "ws": "ws://127.0.0.1:36203/devtools/browser/f1049062-aead-47ed-8719-15f0938b7dd5",
       "http": "http://127.0.0.1:36203/json/version",
