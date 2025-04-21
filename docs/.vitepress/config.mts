@@ -8,10 +8,10 @@ export default defineConfig({
   description: "MirageBrowser",
   head: [
     // 配置网站的图标（显示在浏览器的 tab 上）
-    ["link", { rel: "icon", href: `${base}logo.svg` }],
+    ["link", { rel: "icon", href: `"/MirageBrowser/logo.svg"` }],
   ],
   themeConfig: {
-    logo: `${base}logo.svg`,
+    logo: "/MirageBrowser/logo.svg",
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
