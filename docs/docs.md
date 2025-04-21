@@ -76,31 +76,35 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 
 ### 参数说明
 
-| 参数              | 类型    | 说明                            |
-| ----------------- | ------- | ------------------------------- |
-| `browserName`     | string  | 浏览器环境名称                  |
-| `proxyInfo`       | object  | 代理信息                        |
-| `proxy`           | string  | 代理 IP 地址                    |
-| `protocol`        | string  | 代理协议（http/https 等）       |
-| `host`            | string  | 代理主机名                      |
-| `port`            | number  | 代理端口                        |
-| `username`        | string  | 代理用户名                      |
-| `password`        | string  | 代理密码                        |
-| `timezone`        | string  | 时区（例如：`Asia/Shanghai`）   |
-| `fingerprint`     | object  | 浏览器指纹设置                  |
-| `os`              | string  | 操作系统                        |
-| `platformVersion` | string  | 系统版本                        |
-| `kernel`          | string  | 内核版本                        |
-| `userAgent`       | string  | 用户代理字符串                  |
-| `canvas`          | boolean | 是否启用 Canvas 指纹            |
-| `audioContext`    | boolean | 是否启用 AudioContext 指纹      |
-| `speechVoices`    | boolean | 是否启用 SpeechVoices 指纹      |
-| `clientRects`     | boolean | 是否启用 ClientRects 指纹       |
-| `fonts`           | array   | 浏览器支持的字体列表            |
-| `disableTLS`      | array   | 禁用的 TLS 版本列表             |
-| `resolution`      | string  | 屏幕分辨率（例如：`1920x1080`） |
-| `ram`             | number  | 分配的内存（单位：GB）          |
-| `cpu`             | number  | 分配的 CPU 核心数               |
+| 参数                   | 类型    | 是否必填 | 说明                                                       |
+| ---------------------- | ------- | -------- | ---------------------------------------------------------- |
+| `browserName`          | string  | 是       | 浏览器环境名称                                             |
+| `proxyInfo`            | object  | 是       | 代理信息                                                   |
+| `proxy`                | string  | 否       | 代理 IP 地址                                               |
+| `protocol`             | string  | 否       | 代理协议（http/https 等）                                  |
+| `host`                 | string  | 否       | 代理主机名                                                 |
+| `port`                 | number  | 否       | 代理端口                                                   |
+| `username`             | string  | 否       | 代理用户名                                                 |
+| `password`             | string  | 否       | 代理密码                                                   |
+| `timezone`             | string  | 否       | 时区（例如：`Asia/Shanghai`）                              |
+| `fingerprint`          | object  | 是       | 浏览器指纹设置                                             |
+| `os`                   | string  | 是       | 操作系统                                                   |
+| `platformVersion`      | string  | 是       | 系统版本                                                   |
+| `kernel`               | string  | 是       | 内核版本                                                   |
+| `userAgent`            | string  | 是       | 用户代理字符串                                             |
+| `canvas`               | boolean | 否       | Canvas 指纹 （true 开启随机，false 真实，默认 true）       |
+| `audioContext`         | boolean | 否       | AudioContext 指纹 （true 开启随机，false 真实，默认 true） |
+| `speechVoices`         | boolean | 否       | SpeechVoices 指纹 （true 开启随机，false 真实，默认 true） |
+| `clientRects`          | boolean | 否       | ClientRects 指纹 （true 开启随机，false 真实，默认 true）  |
+| `fonts`                | array   | 否       | 浏览器支持的字体列表                                       |
+| `disableTLS`           | array   | 否       | 禁用的 TLS 版本列表                                        |
+| `resolution`           | string  | 否       | 屏幕分辨率（例如：`1920x1080`）                            |
+| `ram`                  | number  | 否       | 分配的内存                                                 |
+| `cpu`                  | number  | 否       | 分配的 CPU 核心数                                          |
+| `deviceName`           | string  | 否       | 设备名称                                                   |
+| `portScanProtection`   | string  | 否       | 禁止扫描端口 (默认关闭，传输方式：端口,端口)               |
+| `hardwareAcceleration` | boolean | 否       | 硬件加速 （true 开启，false 关闭，默认 true）              |
+| `startupParams`        | string  | 否       | 自定义参数 （默认不传）                                    |
 
 ### 返回示例
 
