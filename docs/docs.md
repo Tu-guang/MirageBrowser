@@ -76,18 +76,34 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 
 ### 参数说明
 
+---
+
+### 🧩 基础参数
+
+| 参数          | 类型   | 是否必填 | 说明           |
+| ------------- | ------ | -------- | -------------- |
+| `browserName` | string | 是       | 浏览器环境名称 |
+
+---
+
+### 🌐 代理设置 `proxyInfo`
+
+| 参数       | 类型   | 是否必填 | 说明                                        |
+| ---------- | ------ | -------- | ------------------------------------------- |
+| `proxy`    | string | 否       | 代理 IP url 地址 （http/socks5 时候须填写） |
+| `protocol` | string | 是       | 代理协议（http/socks5/direct 等）           |
+| `host`     | string | 否       | 代理主机名 （http/socks5 时候须填写）       |
+| `port`     | number | 否       | 代理端口 （http/socks5 时候须填写）         |
+| `username` | string | 否       | 代理用户名 （http/socks5 时候须填写）       |
+| `password` | string | 否       | 代理密码 （http/socks5 时候须填写）         |
+| `timezone` | string | 是       | 时区（例如：`Asia/Shanghai`）               |
+
+---
+
+### 🧬 指纹设置 `fingerprint`
+
 | 参数                   | 类型    | 是否必填 | 说明                                                       |
 | ---------------------- | ------- | -------- | ---------------------------------------------------------- |
-| `browserName`          | string  | 是       | 浏览器环境名称                                             |
-| `proxyInfo`            | object  | 是       | 代理信息                                                   |
-| `proxy`                | string  | 否       | 代理 IP 地址                                               |
-| `protocol`             | string  | 否       | 代理协议（http/https 等）                                  |
-| `host`                 | string  | 否       | 代理主机名                                                 |
-| `port`                 | number  | 否       | 代理端口                                                   |
-| `username`             | string  | 否       | 代理用户名                                                 |
-| `password`             | string  | 否       | 代理密码                                                   |
-| `timezone`             | string  | 否       | 时区（例如：`Asia/Shanghai`）                              |
-| `fingerprint`          | object  | 是       | 浏览器指纹设置                                             |
 | `os`                   | string  | 是       | 操作系统                                                   |
 | `platformVersion`      | string  | 是       | 系统版本                                                   |
 | `kernel`               | string  | 是       | 内核版本                                                   |
@@ -105,6 +121,8 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 | `portScanProtection`   | string  | 否       | 禁止扫描端口 (默认关闭，传输方式：端口,端口)               |
 | `hardwareAcceleration` | boolean | 否       | 硬件加速 （true 开启，false 关闭，默认 true）              |
 | `startupParams`        | string  | 否       | 自定义参数 （默认不传）                                    |
+
+---
 
 ### 返回示例
 
@@ -341,6 +359,19 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 ### 请求方法
 
 `GET /api/browser/list`
+
+### 请求体
+
+```text
+current=1&pageSize=20
+```
+
+### 参数说明
+
+| 参数       | 类型   | 说明     |
+| ---------- | ------ | -------- |
+| `current`  | number | 当前页数 |
+| `pageSize` | number | 查询数量 |
 
 ### 请求头
 
