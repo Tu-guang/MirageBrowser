@@ -1,11 +1,11 @@
 import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
-const base = "/MirageBrowser/";
+const base = "/TgeBrowser/";
 export default defineConfig({
   base,
-  title: "MirageBrowser",
-  description: "MirageBrowser",
+  title: "TgeBrowser",
+  description: "TgeBrowser",
   head: [
     // 配置网站的图标（显示在浏览器的 tab 上）
     ["link", { rel: "icon", href: `${base}logo.svg` }],
@@ -25,11 +25,11 @@ export default defineConfig({
       },
     ],
 
-    socialLinks: [{ icon: "github", link: "https://github.com/MirageBrowser" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/TgeBrowser" }],
 
     footer: {
       message: "Released under the MIT License.",
-      copyright: "Copyright © 2025 MirageBrowser",
+      copyright: "Copyright © 2025 TgeBrowser",
     },
   },
 });
