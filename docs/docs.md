@@ -1,6 +1,6 @@
-# MirageBrowser API 文档
+# TgeBrowser API 文档
 
-MirageBrowser 提供了一些 RESTful API 接口，您可以通过这些接口管理浏览器环境，包括创建、启动、停止、删除环境等操作。
+TgeBrowser 提供了一些 RESTful API 接口，您可以通过这些接口管理浏览器环境，包括创建、启动、停止、删除环境等操作。
 
 ## 接口调用方法
 

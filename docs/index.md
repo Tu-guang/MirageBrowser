@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "MirageBrowser"
+  name: "TgeBrowser"
   text: "指纹浏览器"
   tagline: 快速开始吧
   actions:
