@@ -47,20 +47,19 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 ```json
 {
   "browserName": "TestBrowser",
-  "proxyInfo": {
-    "proxy": "127.0.0.1",
-    "protocol": "http",
-    "host": "localhost",
-    "port": 1080,
-    "username": "user",
-    "password": "pass",
-    "timezone": "Asia/Shanghai"
+  "proxy": {
+    "protocol": "socks5",
+    "host": "108.165.69.97",
+    "port": 6059,
+    "username": "hygwueis",
+    "password": "lc6bb3zfm359",
+    "timezone": "Europe/Amsterdam"
   },
   "fingerprint": {
     "os": "Windows",
     "platformVersion": 11,
-    "kernel": "130",
-    "userAgent": "Mozilla/5.0",
+    "kernel": "135",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.9.2537 Safari/537.36",
     "canvas": true,
     "audioContext": true,
     "speechVoices": true,
@@ -70,7 +69,10 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
     "resolution": "1920x1080",
     "ram": 8,
     "cpu": 4
-  }
+  },
+  "groupId": 29,
+  "remark": "备注",
+  "Cookie": []
 }
 ```
 
@@ -86,17 +88,48 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 
 ---
 
-### 🌐 代理设置 `proxyInfo`
+### 🌐 代理设置 `proxy`
 
-| 参数       | 类型   | 是否必填 | 说明                                        |
-| ---------- | ------ | -------- | ------------------------------------------- |
-| `proxy`    | string | 否       | 代理 IP url 地址 （http/socks5 时候须填写） |
-| `protocol` | string | 是       | 代理协议（http/socks5/direct 等）           |
-| `host`     | string | 否       | 代理主机名 （http/socks5 时候须填写）       |
-| `port`     | number | 否       | 代理端口 （http/socks5 时候须填写）         |
-| `username` | string | 否       | 代理用户名 （http/socks5 时候须填写）       |
-| `password` | string | 否       | 代理密码 （http/socks5 时候须填写）         |
-| `timezone` | string | 是       | 时区（例如：`Asia/Shanghai`）               |
+| 参数       | 类型   | 是否必填            | 说明                                      |
+| ---------- | ------ | ------------------- | ----------------------------------------- |
+| `protocol` | string | 当 proxyId 为空必填 | 代理协议（http/socks5/direct 等）新建代理 |
+| `host`     | string | 否                  | 代理主机名 （http/socks5 时候须填写）     |
+| `port`     | number | 否                  | 代理端口 （http/socks5 时候须填写）       |
+| `username` | string | 否                  | 代理用户名 （http/socks5 时候须填写）     |
+| `password` | string | 否                  | 代理密码 （http/socks5 时候须填写）       |
+| `timezone` | string | 是                  | 时区（例如：`Asia/Shanghai`）             |
+
+---
+
+### 🌐 已有代理设置 `proxyId`
+
+| 参数      | 类型   | 是否必填          | 说明         |
+| --------- | ------ | ----------------- | ------------ |
+| `proxyId` | number | 当 proxy 为空必填 | 使用已有代理 |
+
+---
+
+### 分组设置 `groupId`
+
+| 参数      | 类型   | 是否必填 | 说明         |
+| --------- | ------ | -------- | ------------ |
+| `groupId` | number | 否       | 设置存在分组 |
+
+---
+
+### 备注设置 `remark`
+
+| 参数     | 类型   | 是否必填 | 说明     |
+| -------- | ------ | -------- | -------- |
+| `remark` | string | 否       | 设置备注 |
+
+---
+
+### Cookie 设置 `Cookie`
+
+| 参数     | 类型 | 是否必填 | 说明        |
+| -------- | ---- | -------- | ----------- |
+| `Cookie` | json | 否       | 设置 Cookie |
 
 ---
 
@@ -130,59 +163,7 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 {
   "success": true,
   "data": {
-    "envId": 911,
-    "browserName": "TestBrowser1",
-    "fingerprint": {
-      "os": "Windows",
-      "platformVersion": "15.0.0",
-      "kernel": "130",
-      "userAgent": "Mozilla/5.0",
-      "webrtc": "relay",
-      "webgpu": {
-        "gpuVendor": "intel",
-        "gpuArch": "gen-7"
-      },
-      "webgl": {
-        "glVendor": "Intel",
-        "glRender": "Intel(R) HD Graphics Family Direct3D11 vs_4_1 ps_4_1, D3D11-10.18.13.5598"
-      },
-      "hardwareAcceleration": true,
-      "disableSandbox": true,
-      "startupParams": "",
-      "timezone": "",
-      "geolocation": {
-        "lat": "-13.4621",
-        "lng": "2.3256"
-      },
-      "language": "en-US",
-      "uiLanguage": "en-US",
-      "resolution": "1920x1080",
-      "fonts": ["Arial", "Courier New"],
-      "canvas": true,
-      "audioContext": true,
-      "speechVoices": true,
-      "clientRects": true,
-      "cpu": 4,
-      "ram": 8,
-      "deviceName": "Laptop",
-      "portScanProtection": "",
-      "disableTLS": []
-    },
-    "userId": 4,
-    "proxyInfo": {
-      "proxy": "127.0.0.1",
-      "protocol": "http",
-      "host": "localhost",
-      "port": 1080,
-      "username": "user",
-      "password": "pass",
-      "timezone": "Asia/Shanghai"
-    },
-    "remark": null,
-    "cookie": null,
-    "lastOpenedTime": null,
-    "createTime": "2025-04-21T08:45:14.000Z",
-    "updateTime": "2025-04-21T08:45:14.000Z"
+    "envId": 5880
   },
   "message": "成功"
 }
